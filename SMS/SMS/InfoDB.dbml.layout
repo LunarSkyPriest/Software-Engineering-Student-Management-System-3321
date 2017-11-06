@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="InfoDB">
+  <DataContextMoniker Name="/InfoDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ed894127-6b5a-444e-9a7e-9d8d08a55802" absoluteBounds="0.625, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/InfoDBDataContext/Users" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6e56d79-10ee-4774-b334-a9131478b704" absoluteBounds="0.64, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="03f799a5-84f1-4459-8db0-5f744ca4e9c1" absoluteBounds="5.75, 0.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/InfoDBDataContext/Professor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4fd64bdf-f1f7-4d81-9cd1-407983fab2c4" absoluteBounds="5.7650000000000006, 0.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c92f558f-85af-42ec-bb24-5448a0616ac7" absoluteBounds="2.625, 0.875, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/InfoDBDataContext/Students" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8f1a12eb-de44-4daa-b27b-999626c39133" absoluteBounds="2.64, 1.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
