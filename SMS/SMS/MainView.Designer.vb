@@ -25,60 +25,34 @@ Partial Class MainView
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainView))
-        Me.MenuStrip = New System.Windows.Forms.MenuStrip()
-        Me.StuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ClassesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GradesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolStrip = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripButton1 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton3 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton5 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton7 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton4 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripButton8 = New System.Windows.Forms.ToolStripButton()
-        Me.MenuStrip.SuspendLayout()
+        Me.MenuStrip = New System.Windows.Forms.MenuStrip()
+        Me.StuToolStripMenuItem = New System.Windows.Forms.ToolStripTextBox()
+        Me.Calendar = New System.Windows.Forms.MonthCalendar()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.StatusStrip.SuspendLayout()
         Me.ToolStrip.SuspendLayout()
+        Me.MenuStrip.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'MenuStrip
-        '
-        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StuToolStripMenuItem, Me.ClassesToolStripMenuItem, Me.GradesToolStripMenuItem})
-        Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(819, 24)
-        Me.MenuStrip.TabIndex = 5
-        Me.MenuStrip.Text = "MenuStrip"
-        '
-        'StuToolStripMenuItem
-        '
-        Me.StuToolStripMenuItem.Name = "StuToolStripMenuItem"
-        Me.StuToolStripMenuItem.Size = New System.Drawing.Size(53, 20)
-        Me.StuToolStripMenuItem.Text = "Profile"
-        '
-        'ClassesToolStripMenuItem
-        '
-        Me.ClassesToolStripMenuItem.Name = "ClassesToolStripMenuItem"
-        Me.ClassesToolStripMenuItem.Size = New System.Drawing.Size(57, 20)
-        Me.ClassesToolStripMenuItem.Text = "Classes"
-        '
-        'GradesToolStripMenuItem
-        '
-        Me.GradesToolStripMenuItem.Name = "GradesToolStripMenuItem"
-        Me.GradesToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
-        Me.GradesToolStripMenuItem.Text = "Grades"
         '
         'StatusStrip
         '
         Me.StatusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel})
-        Me.StatusStrip.Location = New System.Drawing.Point(0, 431)
+        Me.StatusStrip.Location = New System.Drawing.Point(0, 212)
         Me.StatusStrip.Name = "StatusStrip"
-        Me.StatusStrip.Size = New System.Drawing.Size(819, 22)
+        Me.StatusStrip.Size = New System.Drawing.Size(692, 22)
         Me.StatusStrip.TabIndex = 7
         Me.StatusStrip.Text = "StatusStrip"
         '
@@ -91,35 +65,37 @@ Partial Class MainView
         'ToolStrip
         '
         Me.ToolStrip.BackColor = System.Drawing.Color.Chartreuse
-        Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton1, Me.ToolStripButton2, Me.ToolStripButton3, Me.ToolStripButton5, Me.ToolStripButton6, Me.ToolStripButton7, Me.ToolStripButton4, Me.ToolStripButton8})
-        Me.ToolStrip.Location = New System.Drawing.Point(0, 24)
+        Me.ToolStrip.Dock = System.Windows.Forms.DockStyle.Left
+        Me.ToolStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton2, Me.ToolStripButton1, Me.ToolStripButton3, Me.ToolStripButton5, Me.ToolStripButton6, Me.ToolStripButton7, Me.ToolStripButton4, Me.ToolStripButton8})
+        Me.ToolStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table
+        Me.ToolStrip.Location = New System.Drawing.Point(0, 27)
         Me.ToolStrip.Name = "ToolStrip"
-        Me.ToolStrip.Size = New System.Drawing.Size(819, 25)
+        Me.ToolStrip.Size = New System.Drawing.Size(158, 185)
         Me.ToolStrip.TabIndex = 6
         Me.ToolStrip.Text = "ToolStrip"
-        '
-        'ToolStripButton1
-        '
-        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
-        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton1.Name = "ToolStripButton1"
-        Me.ToolStripButton1.Size = New System.Drawing.Size(157, 22)
-        Me.ToolStripButton1.Text = "Edit Student Information"
         '
         'ToolStripButton2
         '
         Me.ToolStripButton2.Image = CType(resources.GetObject("ToolStripButton2.Image"), System.Drawing.Image)
         Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(93, 22)
+        Me.ToolStripButton2.Size = New System.Drawing.Size(93, 20)
         Me.ToolStripButton2.Text = "Add Student"
+        '
+        'ToolStripButton1
+        '
+        Me.ToolStripButton1.Image = CType(resources.GetObject("ToolStripButton1.Image"), System.Drawing.Image)
+        Me.ToolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton1.Name = "ToolStripButton1"
+        Me.ToolStripButton1.Size = New System.Drawing.Size(157, 20)
+        Me.ToolStripButton1.Text = "Edit Student Information"
         '
         'ToolStripButton3
         '
         Me.ToolStripButton3.Image = CType(resources.GetObject("ToolStripButton3.Image"), System.Drawing.Image)
         Me.ToolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton3.Name = "ToolStripButton3"
-        Me.ToolStripButton3.Size = New System.Drawing.Size(94, 22)
+        Me.ToolStripButton3.Size = New System.Drawing.Size(94, 20)
         Me.ToolStripButton3.Text = "Add Courses"
         '
         'ToolStripButton5
@@ -128,7 +104,7 @@ Partial Class MainView
         Me.ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), System.Drawing.Image)
         Me.ToolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton5.Name = "ToolStripButton5"
-        Me.ToolStripButton5.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton5.Size = New System.Drawing.Size(23, 20)
         Me.ToolStripButton5.Text = "ToolStripButton5"
         '
         'ToolStripButton6
@@ -137,7 +113,7 @@ Partial Class MainView
         Me.ToolStripButton6.Image = CType(resources.GetObject("ToolStripButton6.Image"), System.Drawing.Image)
         Me.ToolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton6.Name = "ToolStripButton6"
-        Me.ToolStripButton6.Size = New System.Drawing.Size(23, 22)
+        Me.ToolStripButton6.Size = New System.Drawing.Size(23, 20)
         Me.ToolStripButton6.Text = "ToolStripButton6"
         '
         'ToolStripButton7
@@ -145,7 +121,7 @@ Partial Class MainView
         Me.ToolStripButton7.Image = CType(resources.GetObject("ToolStripButton7.Image"), System.Drawing.Image)
         Me.ToolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton7.Name = "ToolStripButton7"
-        Me.ToolStripButton7.Size = New System.Drawing.Size(121, 22)
+        Me.ToolStripButton7.Size = New System.Drawing.Size(121, 20)
         Me.ToolStripButton7.Text = "Change Password"
         '
         'ToolStripButton4
@@ -153,7 +129,7 @@ Partial Class MainView
         Me.ToolStripButton4.Image = CType(resources.GetObject("ToolStripButton4.Image"), System.Drawing.Image)
         Me.ToolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton4.Name = "ToolStripButton4"
-        Me.ToolStripButton4.Size = New System.Drawing.Size(65, 22)
+        Me.ToolStripButton4.Size = New System.Drawing.Size(65, 20)
         Me.ToolStripButton4.Text = "Logout"
         '
         'ToolStripButton8
@@ -161,14 +137,60 @@ Partial Class MainView
         Me.ToolStripButton8.Image = CType(resources.GetObject("ToolStripButton8.Image"), System.Drawing.Image)
         Me.ToolStripButton8.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.ToolStripButton8.Name = "ToolStripButton8"
-        Me.ToolStripButton8.Size = New System.Drawing.Size(45, 22)
+        Me.ToolStripButton8.Size = New System.Drawing.Size(45, 20)
         Me.ToolStripButton8.Text = "Exit"
+        '
+        'MenuStrip
+        '
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StuToolStripMenuItem})
+        Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip.Name = "MenuStrip"
+        Me.MenuStrip.Size = New System.Drawing.Size(692, 27)
+        Me.MenuStrip.TabIndex = 5
+        Me.MenuStrip.Text = "MenuStrip"
+        '
+        'StuToolStripMenuItem
+        '
+        Me.StuToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.StuToolStripMenuItem.Name = "StuToolStripMenuItem"
+        Me.StuToolStripMenuItem.Size = New System.Drawing.Size(95, 23)
+        Me.StuToolStripMenuItem.Text = "Admin Controls"
+        '
+        'Calendar
+        '
+        Me.Calendar.Location = New System.Drawing.Point(465, 50)
+        Me.Calendar.Name = "Calendar"
+        Me.Calendar.TabIndex = 9
+        '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(465, 27)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(227, 30)
+        Me.Label1.TabIndex = 10
+        Me.Label1.Text = "Monthly View"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label2
+        '
+        Me.Label2.Font = New System.Drawing.Font("Lucida Bright", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(172, 27)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(281, 72)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Welcome back, Admin!"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'MainView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(819, 453)
+        Me.ClientSize = New System.Drawing.Size(692, 234)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Calendar)
         Me.Controls.Add(Me.ToolStrip)
         Me.Controls.Add(Me.MenuStrip)
         Me.Controls.Add(Me.StatusStrip)
@@ -176,12 +198,12 @@ Partial Class MainView
         Me.MainMenuStrip = Me.MenuStrip
         Me.Name = "MainView"
         Me.Text = "School of Software"
-        Me.MenuStrip.ResumeLayout(False)
-        Me.MenuStrip.PerformLayout()
         Me.StatusStrip.ResumeLayout(False)
         Me.StatusStrip.PerformLayout()
         Me.ToolStrip.ResumeLayout(False)
         Me.ToolStrip.PerformLayout()
+        Me.MenuStrip.ResumeLayout(False)
+        Me.MenuStrip.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -189,10 +211,6 @@ Partial Class MainView
     Friend WithEvents ToolTip As System.Windows.Forms.ToolTip
     Friend WithEvents ToolStripStatusLabel As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents StatusStrip As System.Windows.Forms.StatusStrip
-    Friend WithEvents MenuStrip As System.Windows.Forms.MenuStrip
-    Friend WithEvents StuToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ClassesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents GradesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStrip As ToolStrip
     Friend WithEvents ToolStripButton1 As ToolStripButton
     Friend WithEvents ToolStripButton2 As ToolStripButton
@@ -202,4 +220,9 @@ Partial Class MainView
     Friend WithEvents ToolStripButton6 As ToolStripButton
     Friend WithEvents ToolStripButton7 As ToolStripButton
     Friend WithEvents ToolStripButton8 As ToolStripButton
+    Friend WithEvents MenuStrip As MenuStrip
+    Friend WithEvents StuToolStripMenuItem As ToolStripTextBox
+    Friend WithEvents Calendar As MonthCalendar
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
