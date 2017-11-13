@@ -14,10 +14,11 @@
         If CheckUser.Count = 0 Then ' if the username or password isnt found
             MsgBox("Invalid Username or Password Entered!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
             Exit Sub
-        Else
+        ElseIf UsernameTextBox.Text <> "admin" Then 'If the user logging in isnt the admin
             StudentView.Show() 'no errors, and not an admin, it should show the student form, currently empty 11/05
             'Me.Close()
         End If
+
 
     End Sub
 
@@ -30,6 +31,10 @@
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-        'label unused since it is not clicked
+
+    End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

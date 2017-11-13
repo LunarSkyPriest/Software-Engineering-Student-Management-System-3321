@@ -15,7 +15,9 @@ Public Class MainView
     End Sub
 
     Private Sub ToolStripButton4_Click(sender As Object, e As EventArgs) Handles ToolStripButton4.Click
-        AboutBox1.ShowDialog()
+        Me.Close()
+        Login.Show()
+        Me.Close()
     End Sub
 
     Private Sub ToolStripButton7_Click(sender As Object, e As EventArgs) Handles ToolStripButton7.Click
@@ -23,7 +25,14 @@ Public Class MainView
     End Sub
 
     Private Sub ToolStripButton8_Click(sender As Object, e As EventArgs) Handles ToolStripButton8.Click
-        Login.Show()
         Me.Close()
+    End Sub
+
+    Private Sub ToolStripButton5_Click(sender As Object, e As EventArgs) Handles ToolStripButton5.Click
+        ViewStudents.Show()
+    End Sub
+
+    Private Sub ToolStripButton6_Click(sender As Object, e As EventArgs) Handles ToolStripButton6.Click
+        AboutBox1.Show()
     End Sub
 End Class

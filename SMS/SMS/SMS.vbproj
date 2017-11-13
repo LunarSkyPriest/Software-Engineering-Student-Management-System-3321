@@ -66,6 +66,7 @@
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -117,11 +118,10 @@
     <Compile Include="EditStudent.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm1.Designer.vb">
-      <DependentUpon>LoginForm1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="LoginForm1.vb">
-      <SubType>Form</SubType>
+    <Compile Include="School.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>School.xsd</DependentUpon>
     </Compile>
     <Compile Include="StudentView.vb">
       <SubType>Form</SubType>
@@ -168,22 +168,37 @@
     <Compile Include="SplashScreen1.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ViewStudents.Designer.vb">
+      <DependentUpon>ViewStudents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStudents.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddCourses.resx">
+      <DependentUpon>AddCourses.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddStudent.resx">
       <DependentUpon>AddStudent.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm1.resx">
-      <DependentUpon>LoginForm1.vb</DependentUpon>
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStudent.resx">
+      <DependentUpon>EditStudent.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StudentView.resx">
       <DependentUpon>StudentView.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen1.resx">
       <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewStudents.resx">
+      <DependentUpon>ViewStudents.vb</DependentUpon>
     </EmbeddedResource>
     <None Include="InfoDB.dbml.layout">
       <DependentUpon>InfoDB.dbml</DependentUpon>
@@ -201,6 +216,17 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <None Include="School.xsc">
+      <DependentUpon>School.xsd</DependentUpon>
+    </None>
+    <None Include="School.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>School.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="School.xss">
+      <DependentUpon>School.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="InfoDB.dbml">

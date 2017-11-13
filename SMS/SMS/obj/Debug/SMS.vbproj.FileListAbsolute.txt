@@ -16,6 +16,9 @@ C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.xml
 C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.pdb
 C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.AddStudent.resources
 C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.StudentView.resources
-C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.LoginForm1.resources
 C:\Users\Raza\Desktop\SMS\SMS\bin\Debug\Database1.mdf
 C:\Users\Raza\Desktop\SMS\SMS\bin\Debug\Database1_log.ldf
+C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.AddCourses.resources
+C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.ChangePass.resources
+C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.EditStudent.resources
+C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.ViewStudents.resources

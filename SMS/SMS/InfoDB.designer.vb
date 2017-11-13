@@ -49,6 +49,12 @@ Partial Public Class InfoDBDataContext
     End Sub
   Partial Private Sub DeleteStudents(instance As Students)
     End Sub
+  Partial Private Sub InsertCourse(instance As Course)
+    End Sub
+  Partial Private Sub UpdateCourse(instance As Course)
+    End Sub
+  Partial Private Sub DeleteCourse(instance As Course)
+    End Sub
   #End Region
 	
 	Public Sub New()
@@ -91,6 +97,12 @@ Partial Public Class InfoDBDataContext
 	Public ReadOnly Property Students() As System.Data.Linq.Table(Of Students)
 		Get
 			Return Me.GetTable(Of Students)
+		End Get
+	End Property
+	
+	Public ReadOnly Property Courses() As System.Data.Linq.Table(Of Course)
+		Get
+			Return Me.GetTable(Of Course)
 		End Get
 	End Property
 End Class
@@ -764,6 +776,244 @@ Partial Public Class Students
 				Me._StudentPicture = value
 				Me.SendPropertyChanged("StudentPicture")
 				Me.OnStudentPictureChanged
+			End If
+		End Set
+	End Property
+	
+	Public Event PropertyChanging As PropertyChangingEventHandler Implements System.ComponentModel.INotifyPropertyChanging.PropertyChanging
+	
+	Public Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+	
+	Protected Overridable Sub SendPropertyChanging()
+		If ((Me.PropertyChangingEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanging(Me, emptyChangingEventArgs)
+		End If
+	End Sub
+	
+	Protected Overridable Sub SendPropertyChanged(ByVal propertyName As [String])
+		If ((Me.PropertyChangedEvent Is Nothing)  _
+					= false) Then
+			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
+		End If
+	End Sub
+End Class
+
+<Global.System.Data.Linq.Mapping.TableAttribute(Name:="dbo.Courses")>  _
+Partial Public Class Course
+	Implements System.ComponentModel.INotifyPropertyChanging, System.ComponentModel.INotifyPropertyChanged
+	
+	Private Shared emptyChangingEventArgs As PropertyChangingEventArgs = New PropertyChangingEventArgs(String.Empty)
+	
+	Private _Id As Integer
+	
+	Private _StudentID As String
+	
+	Private _StudentName As String
+	
+	Private _Class As String
+	
+	Private _Course As String
+	
+	Private _Exam As System.Nullable(Of Decimal)
+	
+	Private _Overall As System.Nullable(Of Decimal)
+	
+	Private _GPA As System.Nullable(Of Decimal)
+	
+	Private _Grade As String
+	
+    #Region "Extensibility Method Definitions"
+    Partial Private Sub OnLoaded()
+    End Sub
+    Partial Private Sub OnValidate(action As System.Data.Linq.ChangeAction)
+    End Sub
+    Partial Private Sub OnCreated()
+    End Sub
+    Partial Private Sub OnIdChanging(value As Integer)
+    End Sub
+    Partial Private Sub OnIdChanged()
+    End Sub
+    Partial Private Sub OnStudentIDChanging(value As String)
+    End Sub
+    Partial Private Sub OnStudentIDChanged()
+    End Sub
+    Partial Private Sub OnStudentNameChanging(value As String)
+    End Sub
+    Partial Private Sub OnStudentNameChanged()
+    End Sub
+    Partial Private Sub OnClassChanging(value As String)
+    End Sub
+    Partial Private Sub OnClassChanged()
+    End Sub
+    Partial Private Sub OnCourseChanging(value As String)
+    End Sub
+    Partial Private Sub OnCourseChanged()
+    End Sub
+    Partial Private Sub OnExamChanging(value As System.Nullable(Of Decimal))
+    End Sub
+    Partial Private Sub OnExamChanged()
+    End Sub
+    Partial Private Sub OnOverallChanging(value As System.Nullable(Of Decimal))
+    End Sub
+    Partial Private Sub OnOverallChanged()
+    End Sub
+    Partial Private Sub OnGPAChanging(value As System.Nullable(Of Decimal))
+    End Sub
+    Partial Private Sub OnGPAChanged()
+    End Sub
+    Partial Private Sub OnGradeChanging(value As String)
+    End Sub
+    Partial Private Sub OnGradeChanged()
+    End Sub
+    #End Region
+	
+	Public Sub New()
+		MyBase.New
+		OnCreated
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Id", AutoSync:=AutoSync.OnInsert, DbType:="Int NOT NULL IDENTITY", IsPrimaryKey:=true, IsDbGenerated:=true)>  _
+	Public Property Id() As Integer
+		Get
+			Return Me._Id
+		End Get
+		Set
+			If ((Me._Id = value)  _
+						= false) Then
+				Me.OnIdChanging(value)
+				Me.SendPropertyChanging
+				Me._Id = value
+				Me.SendPropertyChanged("Id")
+				Me.OnIdChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StudentID", DbType:="NVarChar(50)")>  _
+	Public Property StudentID() As String
+		Get
+			Return Me._StudentID
+		End Get
+		Set
+			If (String.Equals(Me._StudentID, value) = false) Then
+				Me.OnStudentIDChanging(value)
+				Me.SendPropertyChanging
+				Me._StudentID = value
+				Me.SendPropertyChanged("StudentID")
+				Me.OnStudentIDChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_StudentName", DbType:="NVarChar(50)")>  _
+	Public Property StudentName() As String
+		Get
+			Return Me._StudentName
+		End Get
+		Set
+			If (String.Equals(Me._StudentName, value) = false) Then
+				Me.OnStudentNameChanging(value)
+				Me.SendPropertyChanging
+				Me._StudentName = value
+				Me.SendPropertyChanged("StudentName")
+				Me.OnStudentNameChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Name:="Class", Storage:="_Class", DbType:="NVarChar(50)")>  _
+	Public Property [Class]() As String
+		Get
+			Return Me._Class
+		End Get
+		Set
+			If (String.Equals(Me._Class, value) = false) Then
+				Me.OnClassChanging(value)
+				Me.SendPropertyChanging
+				Me._Class = value
+				Me.SendPropertyChanged("[Class]")
+				Me.OnClassChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Course", DbType:="NChar(10)")>  _
+	Public Property Course() As String
+		Get
+			Return Me._Course
+		End Get
+		Set
+			If (String.Equals(Me._Course, value) = false) Then
+				Me.OnCourseChanging(value)
+				Me.SendPropertyChanging
+				Me._Course = value
+				Me.SendPropertyChanged("Course")
+				Me.OnCourseChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Exam", DbType:="Decimal(18,0)")>  _
+	Public Property Exam() As System.Nullable(Of Decimal)
+		Get
+			Return Me._Exam
+		End Get
+		Set
+			If (Me._Exam.Equals(value) = false) Then
+				Me.OnExamChanging(value)
+				Me.SendPropertyChanging
+				Me._Exam = value
+				Me.SendPropertyChanged("Exam")
+				Me.OnExamChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Overall", DbType:="Decimal(18,0)")>  _
+	Public Property Overall() As System.Nullable(Of Decimal)
+		Get
+			Return Me._Overall
+		End Get
+		Set
+			If (Me._Overall.Equals(value) = false) Then
+				Me.OnOverallChanging(value)
+				Me.SendPropertyChanging
+				Me._Overall = value
+				Me.SendPropertyChanged("Overall")
+				Me.OnOverallChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_GPA", DbType:="Decimal(18,0)")>  _
+	Public Property GPA() As System.Nullable(Of Decimal)
+		Get
+			Return Me._GPA
+		End Get
+		Set
+			If (Me._GPA.Equals(value) = false) Then
+				Me.OnGPAChanging(value)
+				Me.SendPropertyChanging
+				Me._GPA = value
+				Me.SendPropertyChanged("GPA")
+				Me.OnGPAChanged
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Grade", DbType:="NVarChar(50)")>  _
+	Public Property Grade() As String
+		Get
+			Return Me._Grade
+		End Get
+		Set
+			If (String.Equals(Me._Grade, value) = false) Then
+				Me.OnGradeChanging(value)
+				Me.SendPropertyChanging
+				Me._Grade = value
+				Me.SendPropertyChanged("Grade")
+				Me.OnGradeChanged
 			End If
 		End Set
 	End Property

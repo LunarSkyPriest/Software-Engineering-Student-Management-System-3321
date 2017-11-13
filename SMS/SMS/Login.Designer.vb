@@ -62,7 +62,7 @@ Partial Class Login
         '
         'PasswordLabel
         '
-        Me.PasswordLabel.Location = New System.Drawing.Point(9, 66)
+        Me.PasswordLabel.Location = New System.Drawing.Point(12, 66)
         Me.PasswordLabel.Name = "PasswordLabel"
         Me.PasswordLabel.Size = New System.Drawing.Size(94, 23)
         Me.PasswordLabel.TabIndex = 2
@@ -71,14 +71,14 @@ Partial Class Login
         '
         'UsernameTextBox
         '
-        Me.UsernameTextBox.Location = New System.Drawing.Point(12, 35)
+        Me.UsernameTextBox.Location = New System.Drawing.Point(15, 35)
         Me.UsernameTextBox.Name = "UsernameTextBox"
         Me.UsernameTextBox.Size = New System.Drawing.Size(220, 20)
         Me.UsernameTextBox.TabIndex = 1
         '
         'PasswordTextBox
         '
-        Me.PasswordTextBox.Location = New System.Drawing.Point(9, 92)
+        Me.PasswordTextBox.Location = New System.Drawing.Point(15, 92)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.PasswordTextBox.Size = New System.Drawing.Size(220, 20)
