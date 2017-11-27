@@ -121,7 +121,7 @@
   <data name="LogoPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPgAAAHeCAYAAAC2U8aUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAP+lSURBVHhe7L0HYB5XmbYd9zTHKYSWAiG9kEYaoQVCFlhC
+        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAP+lSURBVHhe7L0HYB5XmbYd9zTHKYSWAiG9kEYaoQVCFlhC
         hwQCJGEJhBogpJDquPfeey+ybKtasprlJsuyJMu2epes3nu3ff/3/ZwZSfYGSL5l92O/n9d+dM7Ud96Z
         cz3ltDmvuaMP537OnDnTn54+ffqs5ffyGbz/X8ufOnPK5PRp5vkdp7mO38R1zHOddtW6M1w28dZZeprp
         KeUpdr5BqdZJbJ1/DOUUz3tKx+o3nUF332m09p1Cc18fGnv70EBp7D2FJq5v6jvD9afR0nvG8m75vyY6
@@ -4700,8 +4700,11 @@
  This is our Student - Learning Management System
   for Dr. Chang's 3321 Software Engineering Class!
   This program lets you log in as a Student or Admin.
-   Students can only view their Info and Courses.
+   Students can only view their Info, Courses, 
+         and Grades.
+   Students can calculate their GPA.
    Admin can Add, Delete, and Edit Student Info.
-   Admin can also Add, Delete, and Edit Courses.</value>
+   Admin can also Add and Delete Courses.
+   Admin can also Add, Delete, and Edit Grades.</value>
   </data>
 </root>

@@ -10,6 +10,7 @@
         If UsernameTextBox.Text = "admin" And PasswordTextBox.Text = "password" Then
             MainView.Show() 'admin logs in and sees the main menu to edit and change data, as well as the profile form
             'Me.Close() no need to close immediately
+
         End If
         If CheckUser.Count = 0 Then ' if the username or password isnt found
             MsgBox("Invalid Username or Password Entered!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly)
@@ -18,6 +19,9 @@
             StudentView.Show() 'no errors, and not an admin, it should show the student form, currently empty 11/05
             'Me.Close()
         End If
+
+        UsernameTextBox.Text = ""
+        PasswordTextBox.Text = ""
 
 
     End Sub
@@ -35,6 +39,9 @@
     End Sub
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Me.Label1.Location = Me.LogoPictureBox.PointToClient(Me.PointToScreen(Me.Label1.Location))
+        Me.Label1.Parent = Me.LogoPictureBox
+        ' UsernameTextBox.Clear()
+        'PasswordTextBox.Clear()
     End Sub
 End Class

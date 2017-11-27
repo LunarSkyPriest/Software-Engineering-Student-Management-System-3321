@@ -40,7 +40,7 @@
     Private Sub bnSave_Click(sender As Object, e As EventArgs) Handles bnSave.Click
         'Throw error for when the crucial fields are left empty, AKA, Student ID, Age,Name, Gender, and Classification
         If StudentID.Text = "" Or StudentN.Text = "" Or SGender.Text = "" Or SEClass.Text = "" Or SAge.Value = 0 Then
-            MsgBox("Student ID, Full Name, Gender, ans Class are Required Fields!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
+            MsgBox("Student ID, Full Name, Age, Gender, and Class are Required Fields!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly)
             Exit Sub
         End If
         Dim db As New InfoDBDataContext 'Calling up the database

@@ -22,6 +22,7 @@ Partial Class AddStudent
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AddStudent))
         Me.StudentN = New System.Windows.Forms.TextBox()
         Me.SGender = New System.Windows.Forms.ComboBox()
         Me.SAge = New System.Windows.Forms.NumericUpDown()
@@ -46,7 +47,7 @@ Partial Class AddStudent
         '
         'StudentN
         '
-        Me.StudentN.Location = New System.Drawing.Point(25, 41)
+        Me.StudentN.Location = New System.Drawing.Point(49, 53)
         Me.StudentN.Name = "StudentN"
         Me.StudentN.Size = New System.Drawing.Size(176, 20)
         Me.StudentN.TabIndex = 0
@@ -55,42 +56,42 @@ Partial Class AddStudent
         '
         Me.SGender.FormattingEnabled = True
         Me.SGender.Items.AddRange(New Object() {"Female", "Male", "Other"})
-        Me.SGender.Location = New System.Drawing.Point(25, 109)
+        Me.SGender.Location = New System.Drawing.Point(49, 149)
         Me.SGender.Name = "SGender"
         Me.SGender.Size = New System.Drawing.Size(176, 21)
         Me.SGender.TabIndex = 1
         '
         'SAge
         '
-        Me.SAge.Location = New System.Drawing.Point(25, 169)
+        Me.SAge.Location = New System.Drawing.Point(49, 211)
         Me.SAge.Name = "SAge"
         Me.SAge.Size = New System.Drawing.Size(176, 20)
         Me.SAge.TabIndex = 2
         '
         'SAddress
         '
-        Me.SAddress.Location = New System.Drawing.Point(278, 41)
+        Me.SAddress.Location = New System.Drawing.Point(261, 53)
         Me.SAddress.Name = "SAddress"
-        Me.SAddress.Size = New System.Drawing.Size(451, 20)
+        Me.SAddress.Size = New System.Drawing.Size(220, 20)
         Me.SAddress.TabIndex = 3
         '
         'SPhone
         '
-        Me.SPhone.Location = New System.Drawing.Point(278, 103)
+        Me.SPhone.Location = New System.Drawing.Point(261, 150)
         Me.SPhone.Name = "SPhone"
         Me.SPhone.Size = New System.Drawing.Size(219, 20)
         Me.SPhone.TabIndex = 4
         '
         'StudentID
         '
-        Me.StudentID.Location = New System.Drawing.Point(524, 103)
+        Me.StudentID.Location = New System.Drawing.Point(49, 99)
         Me.StudentID.Name = "StudentID"
-        Me.StudentID.Size = New System.Drawing.Size(205, 20)
+        Me.StudentID.Size = New System.Drawing.Size(176, 20)
         Me.StudentID.TabIndex = 5
         '
         'SEmail
         '
-        Me.SEmail.Location = New System.Drawing.Point(278, 169)
+        Me.SEmail.Location = New System.Drawing.Point(262, 211)
         Me.SEmail.Name = "SEmail"
         Me.SEmail.Size = New System.Drawing.Size(218, 20)
         Me.SEmail.TabIndex = 6
@@ -99,25 +100,25 @@ Partial Class AddStudent
         '
         Me.SEClass.FormattingEnabled = True
         Me.SEClass.Items.AddRange(New Object() {"Freshman", "Sophomore", "Junior", "Senior", "Graduate"})
-        Me.SEClass.Location = New System.Drawing.Point(524, 168)
+        Me.SEClass.Location = New System.Drawing.Point(260, 98)
         Me.SEClass.Name = "SEClass"
-        Me.SEClass.Size = New System.Drawing.Size(205, 21)
+        Me.SEClass.Size = New System.Drawing.Size(220, 21)
         Me.SEClass.TabIndex = 7
         '
         'bnSave
         '
-        Me.bnSave.Location = New System.Drawing.Point(277, 217)
+        Me.bnSave.Location = New System.Drawing.Point(218, 254)
         Me.bnSave.Name = "bnSave"
-        Me.bnSave.Size = New System.Drawing.Size(219, 50)
+        Me.bnSave.Size = New System.Drawing.Size(128, 50)
         Me.bnSave.TabIndex = 8
         Me.bnSave.Text = "Save"
         Me.bnSave.UseVisualStyleBackColor = True
         '
         'bnClear
         '
-        Me.bnClear.Location = New System.Drawing.Point(25, 217)
+        Me.bnClear.Location = New System.Drawing.Point(59, 254)
         Me.bnClear.Name = "bnClear"
-        Me.bnClear.Size = New System.Drawing.Size(176, 34)
+        Me.bnClear.Size = New System.Drawing.Size(98, 34)
         Me.bnClear.TabIndex = 9
         Me.bnClear.Text = "Clear"
         Me.bnClear.UseVisualStyleBackColor = True
@@ -125,80 +126,96 @@ Partial Class AddStudent
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(22, 25)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(55, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(75, 13)
+        Me.Label1.Size = New System.Drawing.Size(116, 20)
         Me.Label1.TabIndex = 10
-        Me.Label1.Text = "Student Name"
+        Me.Label1.Text = "Student Name:"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(275, 25)
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(275, 30)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(45, 13)
+        Me.Label2.Size = New System.Drawing.Size(71, 20)
         Me.Label2.TabIndex = 11
-        Me.Label2.Text = "Address"
+        Me.Label2.Text = "Address:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(22, 93)
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(55, 126)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(42, 13)
+        Me.Label3.Size = New System.Drawing.Size(70, 20)
         Me.Label3.TabIndex = 12
-        Me.Label3.Text = "Gender"
+        Me.Label3.Text = "Gender:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(275, 87)
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(275, 127)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(78, 13)
+        Me.Label4.Size = New System.Drawing.Size(122, 20)
         Me.Label4.TabIndex = 13
-        Me.Label4.Text = "Phone Number"
+        Me.Label4.Text = "Phone Number:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(521, 87)
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(55, 76)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(58, 13)
+        Me.Label5.Size = New System.Drawing.Size(88, 20)
         Me.Label5.TabIndex = 14
-        Me.Label5.Text = "Student ID"
+        Me.Label5.Text = "Student ID:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(22, 153)
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(55, 188)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(26, 13)
+        Me.Label6.Size = New System.Drawing.Size(44, 20)
         Me.Label6.TabIndex = 15
-        Me.Label6.Text = "Age"
+        Me.Label6.Text = "Age:"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(275, 153)
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(270, 188)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(73, 13)
+        Me.Label7.Size = New System.Drawing.Size(112, 20)
         Me.Label7.TabIndex = 16
-        Me.Label7.Text = "Email Address"
+        Me.Label7.Text = "Email Address:"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(521, 152)
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(270, 76)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(68, 13)
+        Me.Label8.Size = New System.Drawing.Size(108, 20)
         Me.Label8.TabIndex = 17
-        Me.Label8.Text = "Classification"
+        Me.Label8.Text = "Classification:"
         '
         'bnCancel
         '
-        Me.bnCancel.Location = New System.Drawing.Point(524, 217)
+        Me.bnCancel.Location = New System.Drawing.Point(353, 254)
         Me.bnCancel.Name = "bnCancel"
-        Me.bnCancel.Size = New System.Drawing.Size(205, 50)
+        Me.bnCancel.Size = New System.Drawing.Size(128, 50)
         Me.bnCancel.TabIndex = 18
         Me.bnCancel.Text = "Cancel"
         Me.bnCancel.UseVisualStyleBackColor = True
@@ -207,8 +224,10 @@ Partial Class AddStudent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(770, 301)
+        Me.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(522, 349)
         Me.Controls.Add(Me.bnCancel)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -228,8 +247,9 @@ Partial Class AddStudent
         Me.Controls.Add(Me.SAge)
         Me.Controls.Add(Me.SGender)
         Me.Controls.Add(Me.StudentN)
+        Me.DoubleBuffered = True
         Me.Name = "AddStudent"
-        Me.Text = "Add Student"
+        Me.Text = "Add Students"
         CType(Me.SAge, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

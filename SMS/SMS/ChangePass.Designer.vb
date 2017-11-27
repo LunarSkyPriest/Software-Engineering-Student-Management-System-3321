@@ -28,7 +28,7 @@ Partial Class ChangePass
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(668, 262)
+        Me.ClientSize = New System.Drawing.Size(462, 388)
         Me.Name = "ChangePass"
         Me.Text = "ChangePass"
         Me.ResumeLayout(False)

@@ -18,7 +18,15 @@ C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.AddStudent.resources
 C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.StudentView.resources
 C:\Users\Raza\Desktop\SMS\SMS\bin\Debug\Database1.mdf
 C:\Users\Raza\Desktop\SMS\SMS\bin\Debug\Database1_log.ldf
-C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.AddCourses.resources
 C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.ChangePass.resources
 C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.EditStudent.resources
 C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.ViewStudents.resources
+C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.ViewCourses.resources
+C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.AddCourses.resources
+C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.ViewGrades.resources
+C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.AddGrades.resources
+C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.StudProfile.resources
+C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.StudCourses.resources
+C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.StudGPA.resources
+C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.CourseDes.resources
+C:\Users\Raza\Desktop\SMS\SMS\obj\Debug\SMS.StudGrades.resources
