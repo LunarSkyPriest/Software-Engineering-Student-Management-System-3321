@@ -39,16 +39,29 @@
     </Type>
   </Table>
   <Table Name="dbo.Courses" Member="Courses">
-    <Type Name="Course">
+    <Type Name="Courses">
       <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="StudentID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="StudentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Class" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Course" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Course" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Exam" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
       <Column Name="Overall" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
       <Column Name="GPA" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
       <Column Name="Grade" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Grades" Member="Grades">
+    <Type Name="Grades">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudentID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StudentName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Course" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Homework" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Exam" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HomeworkG" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="ExamG" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="TGrade" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

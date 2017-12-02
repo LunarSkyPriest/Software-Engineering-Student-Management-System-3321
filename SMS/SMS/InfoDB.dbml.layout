@@ -20,10 +20,16 @@
         <elementListCompartment Id="8f1a12eb-de44-4daa-b27b-999626c39133" absoluteBounds="2.64, 1.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="d9be58ef-127c-43a3-861a-8e1ec1382b8f" absoluteBounds="0.625, 2.625, 2, 2.5401025390625">
-      <DataClassMoniker Name="/InfoDBDataContext/Course" />
+    <classShape Id="b7f8e816-dfa6-477d-b5f8-fe9b728366e9" absoluteBounds="0.625, 2.75, 2, 2.5401025390625">
+      <DataClassMoniker Name="/InfoDBDataContext/Courses" />
       <nestedChildShapes>
-        <elementListCompartment Id="c8af5d81-8748-4550-aae3-da6029eb1cce" absoluteBounds="0.64, 3.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="fbff3ea3-ed39-4247-bb69-c9efa7dcbce7" absoluteBounds="0.64000000000000012, 3.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="97b549fd-1533-4cf9-9e2a-366e761187dc" absoluteBounds="2.625, 3.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/InfoDBDataContext/Grades" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d651f012-0603-4e36-8fe7-cef044668d57" absoluteBounds="2.64, 4.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>
